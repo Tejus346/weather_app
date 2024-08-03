@@ -12,8 +12,7 @@ function convertion(val){
 
 btn.addEventListener('click',function(){
 
-    // ANDY JS CODE //
-  
+      
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputvalue.value+'&appid='+apik).then(res=>res.json())
   .then(data=>{
     var nameval= data['name']
